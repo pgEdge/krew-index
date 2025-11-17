@@ -1,0 +1,60 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: cnpg
+spec:
+  version: v1.27.1
+  homepage: https://github.com/cloudnative-pg/cloudnative-pg
+  shortDescription: CloudNativePG kubectl plugin
+  description: |
+    kubectl plugin for managing CloudNativePG PostgreSQL clusters on Kubernetes.
+    
+    This plugin provides commands to:
+    - Manage PostgreSQL cluster lifecycle
+    - Perform backups and restores
+    - Monitor cluster status
+    - Manage certificates and credentials
+    
+    Source: https://github.com/cloudnative-pg/cloudnative-pg
+    Built from: v1.27.1
+    Maintained by: pgEdge
+  caveats: |
+    This plugin requires the CloudNativePG operator to be installed in your cluster.
+    
+    For more information, visit: https://cloudnative-pg.io
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/pgEdge/cnpg-build/releases/download/v1.27.1/kubectl-cnpg-linux-amd64.tar.gz
+    sha256: "bf1a721c052b88bb58a2f569cf2b9d63b0b81f7a66f6b2a8559d9afe032076a7"
+    bin: kubectl-cnpg
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://github.com/pgEdge/cnpg-build/releases/download/v1.27.1/kubectl-cnpg-linux-arm64.tar.gz
+    sha256: "7341513920911bf7b07312478aadadd75d447c9d136a261573c75f01b6e6065a"
+    bin: kubectl-cnpg
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/pgEdge/cnpg-build/releases/download/v1.27.1/kubectl-cnpg-darwin-amd64.tar.gz
+    sha256: "c2ad512b56c88d51d44a5bc2156bae0a8ef8352ae7d8d50ed48f95495b80d0aa"
+    bin: kubectl-cnpg
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://github.com/pgEdge/cnpg-build/releases/download/v1.27.1/kubectl-cnpg-darwin-arm64.tar.gz
+    sha256: "68e025465d1c88dc1e31a4f5f185cc09849a5ae23266f5efe1fa3230416d16fc"
+    bin: kubectl-cnpg
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/pgEdge/cnpg-build/releases/download/v1.27.1/kubectl-cnpg-windows-amd64.zip
+    sha256: "49b1745b0463ede665f5737062124d903dc492bc13759607a8c487916c5993d0"
+    bin: kubectl-cnpg.exe
