@@ -7,7 +7,7 @@ kind: Plugin
 metadata:
   name: cnpg
 spec:
-  version: v1.29.1
+  version: v1.30.0
   homepage: https://github.com/cloudnative-pg/cloudnative-pg
   shortDescription: CloudNativePG kubectl plugin
   description: |
@@ -20,7 +20,7 @@ spec:
     - Manage certificates and credentials
     
     Source: https://github.com/cloudnative-pg/cloudnative-pg
-    Built from: v1.29.1
+    Built from: v1.30.0
     Maintained by: pgEdge
   caveats: |
     This plugin requires the CloudNativePG operator to be installed in your cluster.
@@ -31,34 +31,34 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
-    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.29.1/kubectl-cnpg-linux-amd64.tar.gz
-    sha256: "86bf9eaaad50e1bd9ef437be5febeded937a2a3c7457cb07414d6e7158ad82bb"
+    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.30.0/kubectl-cnpg-linux-amd64.tar.gz
+    sha256: "ae9bf7d47ccb1d513710837c1de4ad399cb141b6a6fc4d5690a611d02f214b92"
     bin: kubectl-cnpg
   - selector:
       matchLabels:
         os: linux
         arch: arm64
-    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.29.1/kubectl-cnpg-linux-arm64.tar.gz
-    sha256: "6d5f69a9ced12d9ff811ef3bac747f9544ab9979aadb2e7125685bd371647324"
+    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.30.0/kubectl-cnpg-linux-arm64.tar.gz
+    sha256: "812b9b7d2c6bd920ee1f156f9960db3b8163eac207d436b19a6530b7ee7443b6"
     bin: kubectl-cnpg
   - selector:
       matchLabels:
         os: darwin
         arch: amd64
-    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.29.1/kubectl-cnpg-darwin-amd64.tar.gz
-    sha256: "20b434345ce2ea239658724b5d79cd525d48c0bb058cabe1c163fce1be46d138"
+    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.30.0/kubectl-cnpg-darwin-amd64.tar.gz
+    sha256: "17fb5ad5b92f35da85b5b09a1ef5a3caccf64cbf4c2a7e6c4fd5c503f19e4059"
     bin: kubectl-cnpg
   - selector:
       matchLabels:
         os: darwin
         arch: arm64
-    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.29.1/kubectl-cnpg-darwin-arm64.tar.gz
-    sha256: "c35b4784daa300cdaeda6daa75e60eb0d43b81b4703be921e29e05e060d22af3"
+    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.30.0/kubectl-cnpg-darwin-arm64.tar.gz
+    sha256: "63c0eed3e70451eca4f191cc064da3e084461c9bce3be74acbc42ab649810f1e"
     bin: kubectl-cnpg
   - selector:
       matchLabels:
         os: windows
         arch: amd64
-    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.29.1/kubectl-cnpg-windows-amd64.zip
-    sha256: "53e4061e02cae16328254a22808ed43b25049784cd8d5f61ef07a7964c7f33a7"
+    uri: https://github.com/pgEdge/pgedge-cnpg-dist/releases/download/v1.30.0/kubectl-cnpg-windows-amd64.zip
+    sha256: "c51d624bfd8d532b57974c2bc0320a7e5cc78042fbb2eb7f8312ed1427f7a547"
     bin: kubectl-cnpg.exe
